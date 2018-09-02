@@ -1,0 +1,11 @@
+div{
+    border: 1px solid black;
+}
+#wrapper {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(6, 90px);
+    margin-left: auto;
+    margin-right: auto;
+  }
