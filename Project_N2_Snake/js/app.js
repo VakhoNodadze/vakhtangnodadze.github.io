@@ -44,7 +44,13 @@ class Board {
         this.lastActionTime = 0;
         this.columnsCount = settings.columnsCount || 30;
         this.rowsCount = settings.rowsCount || 20;
-        this.snake = settings.snake || (new Snake([this.randomPoint()]));
+        let randomSnake = this.randomPoint();
+        let parts = [];
+        let partsCount = settings.partsCount;
+        for(let i = 0 ;  i < partsCount; i++){
+            parts.push(randomSnake);
+        }
+        this.snake =  new Snake(parts);
         this.cellSize = canvas.width / this.columnsCount; 
         this.foodsCount = settings.foodsCount || 1;
         this.winScore =  500;
@@ -252,12 +258,12 @@ document.querySelector('.apply-button').addEventListener('click', function () {
         case 'Hard': settings.speed = 60;  break;
     }
 
-    let foodsCount = parseInt(document.querySelector('#FoodCount').value);
+    let foodsCount = document.querySelector('#FoodCount').value;
     if (!isNaN(foodsCount)) {
             settings.foodsCount = foodsCount;
         }
 
-    let snakeSpeed = parseInt(document.querySelector('#SnakeSpeed').value);
+    let snakeSpeed = document.querySelector('#SnakeSpeed').value;
     if(!isNaN(snakeSpeed)){
         settings.speed = snakeSpeed;
     }
@@ -265,6 +271,8 @@ document.querySelector('.apply-button').addEventListener('click', function () {
 
     settings.columnsCount = document.querySelector('#Columns').value;
     settings.rowsCount = document.querySelector('#Rows').value;
+
+    settings.partsCount = document.querySelector('#SnakeLength').value;
 
     board.gameOver = true;
     board = new Board(settings);
