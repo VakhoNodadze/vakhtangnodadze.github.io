@@ -1,0 +1,30 @@
+doctype html
+head
+    title People
+   
+body
+    form(action="http://localhost:3000/personBase" method="post")
+        label(for="Name") 
+            input(type="text" name="name"  placeholder="Name" required)
+        label(for="lastName")   
+            input(type="text" name="lastName" placeholder="LastName" required)
+        label(for="ID") 
+            input(type="text" name="ID" placeholder="ID" required)
+        label(for="date") 
+            input(type="date" name="date" placeholder="date")
+        button(type="submit" class="button") Add Person
+        br
+        br
+        a(href="http://localhost:3000/personBase/") Show Person DataBase
+        br
+        br
+        a(href="http://localhost:3000/addCar/") Add Cars
+        br
+        br
+        a(href ="http://localhost:3000/carBase/") Show Car DataBase
+        br
+        br
+        a(href ="http://localhost:3000/carSearch/") Search Cars in DataBase
+        br
+        br
+        a(href ="http://localhost:3000/userSearch/") Search Users in DataBase

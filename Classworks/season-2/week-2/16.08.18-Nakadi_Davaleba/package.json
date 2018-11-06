@@ -1,0 +1,11 @@
+{
+  "name": "16.08.18-nakadi_davaleba",
+  "version": "1.0.0",
+  "description": "Davaleba",
+  "main": "students.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vakho",
+  "license": "ISC"
+}

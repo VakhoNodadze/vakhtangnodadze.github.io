@@ -1,0 +1,33 @@
+.header{
+    background-color:#4f555e;
+    height: 20%;
+}
+h1{
+    color: white;
+    padding-top: 45px;
+    margin-left: 10px;
+}
+.box{
+    height: 40px;
+    background-color: #356cbf;
+    color: white;
+    font-size: 20px;
+}
+.left-list{
+    width: 15%;
+    display: block;
+    float: left;
+}
+.content{
+    float: right;
+    width: 80%;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+.footer{
+    width: 100%;
+    background-color:#4f555e;
+    height: 90px;
+    font-size: 20px;
+    clear: both;
+}

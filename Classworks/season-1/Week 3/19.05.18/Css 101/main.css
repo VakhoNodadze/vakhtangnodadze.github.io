@@ -1,0 +1,84 @@
+/*
+span.a{
+    display: inline;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border: 1px solid red;
+    background-color: yellow;
+    word-wrap: break-word;
+}
+span.b{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border: 1px solid red;
+    background-color: yellow;
+    word-wrap: break-word;
+}
+span.c{
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border: 1px solid red;
+    background-color: yellow;
+    word-wrap: break-word;
+}
+/* Nav */
+/*
+nav a{
+    display: inline-block;
+    padding: 7px;
+    background-color: red;
+    margin-right: -2px;
+}
+*/
+div.static{
+    position: static;
+    border: 3px solid yellowgreen;
+}
+div.relative{
+    border: 3px solid rebeccapurple;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+div.relative2{
+    margin-top: 50px;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border: 3px solid black;
+}
+div.absolute{
+    border: 3px solid rebeccapurple;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    left: 20px;
+    top: 0px;
+    display: none;
+}
+div.relative2:hover > div.absolute{
+    display: block;
+}
+div.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    border: 3px solid seagreen;
+    background-color: sienna;
+}
+img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    z-index: -1;
+}

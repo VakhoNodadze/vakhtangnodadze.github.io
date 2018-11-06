@@ -1,0 +1,24 @@
+{
+  "name": "nakadi",
+  "version": "1.0.0",
+  "description": "nakadia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "show-site": "node request.js",
+    "events": "node 1-events.js",
+    "readable": "node readableStream.js",
+    "writable": "node writableStream.js",
+    "pipe": "node pipe.js"
+  },
+  "author": "vakho nodadze",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.3",
+    "gzip": "^0.1.0",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  }
+}

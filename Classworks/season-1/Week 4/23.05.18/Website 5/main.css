@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    width: 70%;
+    float: left;
+    text-align: center;
+    background-color: rgba(43, 2, 2, 0.267);
+    height: 5%;
+}
+.sides{
+    background-color: blue;
+    width: 15%;
+    float: left;
+    height: 5%;
+    text-align: center;
+}
+.column-sides{
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+.column-center{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+footer{
+    background-color: darkorange;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}

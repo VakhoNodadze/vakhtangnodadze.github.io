@@ -1,0 +1,19 @@
+div.horizontal{
+    display: inline-block;
+    width: 350px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin-right: 10px;
+    text-align: center;
+}
+img{
+    height: auto;
+    width: 100%;
+    border: 1px  white;
+}
+.horizontal:hover{
+    border: 2px solid black;
+}
+p{
+    font-size: 20px;
+}

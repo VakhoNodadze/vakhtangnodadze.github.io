@@ -1,0 +1,16 @@
+*{
+    background-color: skyblue;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+h3{
+    text-align: center;
+    color: red;
+}

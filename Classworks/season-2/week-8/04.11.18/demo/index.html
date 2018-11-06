@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSX Demo</title>
+</head>
+<body>
+    <script>
+            let person = [
+                {
+                    name: 'Vaxo',
+                    age: 23,
+                    id: 1,
+                },
+                {
+                    name: 'Grigoli',
+                    age: 20,
+                    id: 2,
+                },
+                {
+                    name: 'Mamuka',
+                    age: 20,
+                    id: 3,
+                },
+                {
+                    name: 'Salome',
+                    age: 27,
+                    id: 4,
+                }
+            ]
+
+            let personsHTML = person.map ( person => `<p>User - ${person.name}, ID - ${person.id}</p>`);
+            let personFiltered = person.filter( person => {
+                return person.age < 21
+            }).map( person => `<p>User - ${person.name}, ID - ${person.id}</p>`)
+            
+            let personReduced = person.reduce( (total, current) => {
+                return total += `<p>User - ${current.name}, ID - ${current.id}</p>`
+            }, '');
+            
+            let numbers = [2,4,8,16];
+
+
+            Array.prototype.costumReduce = function (callbackfunc, initValue){
+                if(typeof initValue === 'undefined') return undefined;
+                let result = initValue;
+
+                for(let i = 0; i < this.length; i++){
+                    result = callbackfunc(result, this[i]);
+                }
+                return result;
+            }
+            
+
+            document.body.innerHTML = personsHTML.join('');
+            document.body.innerHTML += '<hr>';
+            document.body.innerHTML += personFiltered.join('');
+            document.body.innerHTML += '<hr>';
+            document.body.innerHTML += personReduced;
+            console.table(personFiltered);
+    </script>
+</body>
+</html>

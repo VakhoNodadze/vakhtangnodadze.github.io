@@ -1,0 +1,76 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ClassWork 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        div {
+            height: 150px;
+        }
+        #grad1{
+            background-image: radial-gradient(red,green,blue);
+        }
+        #grad2{
+            background-image: radial-gradient(red 5%, green 15%, blue 60%);
+        }
+        #grad3{
+            background-image: radial-gradient(circle,red 5%, green 15%, blue 60%)
+        }
+        #grad4{
+            background: repeating-radial-gradient(red 5%, red 10%, blue 19%,blue 21%)
+        }
+        #grad5{
+            background: repeating-radial-gradient(circle at 20%, #333, #333 10px, #eee 10px, #efa 20px);
+        }
+        h2{
+            text-shadow: 5px 4px 5px red, -8px -8px 6px blue;
+        }
+        h1.multiple{
+            color: white;
+            text-shadow: 1px 1px 2px green, 0 0 25px blue, 0 0 5px red;
+        }
+        .box{
+            background-color: #222;
+            text-align: center;
+            line-height: 200px;
+        }
+        .box h1{
+            color: rgba(0, 0, 0, .6);
+            text-shadow: 2px 2px 3px rgba(255, 255, 255,1);
+        }
+        .box_shadow{
+            width: 600px;
+            height: 300px;
+            background-color: yellow;
+            box-shadow: 10px 0px,0px 10px;
+            margin-bottom: 150px;
+            margin-top: 30px;
+        }
+        .box_shadow:hover{
+            box-shadow: 0px 10px inset;
+        }
+    </style>
+</head>
+<body>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+    <hr>
+    <div id="grad4"></div>
+    <div id="grad5"></div>
+    <br>
+    <br>
+    <h1>H1 Text Shadow</h1>
+    <h1 class="multiple">Multiple Text Shadows</h1>
+    <div class="box">
+        <h1>Text Shadow</h1>
+    </div>
+    <div class="box_shadow">
+
+    </div>
+</body>
+</html>

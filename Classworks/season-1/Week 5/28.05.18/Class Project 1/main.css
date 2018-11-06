@@ -1,0 +1,22 @@
+div.horizontal{
+    display: inline-block;
+    width: 350px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 3px 3px 15px 5px gray, -3px 3px 15px 5px gray;
+}
+.horizontal:hover{
+    box-shadow: 0 0 2500px gray;
+}
+.container{
+    text-align: center;
+}
+img{
+    height: auto;
+    width: 100%;
+    border: 1px  white;
+}
+p{
+    font-size: 20px;
+}

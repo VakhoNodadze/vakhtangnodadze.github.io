@@ -1,0 +1,47 @@
+.video{
+    position: relative;
+}
+.img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prizepool{
+    position: relative;
+    text-align: center;
+}
+.info h1{
+    position: absolute;
+    font-size: 80px;
+    letter-spacing: 7px;
+    color: #d2d0cf;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: center;
+}
+.prizepool h2{
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #d2d0cf;
+    text-shadow: 2px 2px 8px #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+.top-3 img{
+    height: 100px;
+    width: 100%;
+}
+.top-3 h2{
+    top: 50px;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #000000;
+    color: #5a5553;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

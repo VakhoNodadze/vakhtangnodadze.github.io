@@ -1,0 +1,61 @@
+html, body{
+	margin: 10;
+	background-color: rgb(180, 213, 223);
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+.main{
+	display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+	width: 100%;
+}
+img {
+	border: 10px solid black;
+}
+figure{
+	text-align: center;
+}
+figcaption{
+	background-color: black;
+	color: white;
+}
+@media all and (min-width:600px){
+	.figure{
+		width: 40%;
+	}
+}
+@media all and (min-width:800px){
+	.main{
+		flex: 3 0px;
+	}
+	.figure-1{
+		order: 1;
+	}
+	.figure-2{
+		order: 2;
+	}
+	.figure-3{
+		order: 3;
+	}
+	.figure-4{
+		order: 4;
+	}
+	.figure-5{
+		order: 5;
+	}
+}
