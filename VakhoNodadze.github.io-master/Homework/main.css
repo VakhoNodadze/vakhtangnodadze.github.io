@@ -1,0 +1,27 @@
+body{
+	margin:0;
+	overflow-x:hidden;
+}
+
+div.left{
+	position: relative;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+div.center{
+	position: relative;
+    width: 800px;
+    display: inline-block;
+}
+div.right{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+div.footer{
+    height: 70px;
+    background-color: green;
+    width: 100%;
+    bottom: 0;
+}

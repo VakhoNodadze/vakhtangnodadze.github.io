@@ -1,0 +1,240 @@
+/*
+COLORS:
+    Almost-White: #dce0e8;
+    Black: #000000;
+    
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-image: url("../images/img.jpg");
+  height: 100vh; }
+
+.wrapper {
+  display: flex;
+  justify-content: center; }
+
+nav ul {
+  display: flex;
+  color: #dce0e8; }
+  nav ul li {
+    margin: 20px;
+    display: flex; }
+    nav ul li:nth-child(4) {
+      font-size: 25px;
+      font-family: 'Lobster'; }
+
+.header-text-box {
+  color: #dce0e8;
+  margin-top: 100px;
+  text-align: center; }
+
+.header-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: 'Lobster';
+  animation-name: moveInLeft;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out; }
+
+.header-primary-sub {
+  display: block;
+  font-size: 20px;
+  animation-name: moveInRight;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out; }
+
+.btn--white {
+  margin-top: 200px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 100px;
+  display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  padding: 10px 40px;
+  animation-name: moveInBottom;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 1 0px rgba(0, 0, 0, 0.3); }
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 100px; }
+  section > div {
+    width: 33.3%;
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+    font-family: 'Lobster'; }
+    section > div > h3 {
+      line-height: 200px;
+      letter-spacing: 10px;
+      font-weight: 300; }
+
+.scotland {
+  background-image: url(../images/scotland.jpg); }
+
+.canada {
+  background-image: url(../images/canada.jpg); }
+
+.italy {
+  background-image: url(../images/iitaly.jpg); }
+
+.england {
+  background-image: url(../images/england.jpg); }
+
+.iceland {
+  background-image: url(../images/iceland.jpg); }
+
+.new-zeland {
+  background-image: url(../images/new-zeland.jpg); }
+
+footer {
+  position: relative; }
+
+.footer {
+  position: absolute;
+  background-image: url(../images/ice.jpg);
+  width: calc(100vw - 20%);
+  left: 10%;
+  height: 80vh;
+  top: 100px; }
+  .footer__background {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: inherit;
+    width: calc(100vw - 20%); }
+  .footer__primary {
+    color: #4e5e7d;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 30px; }
+    .footer__primary-line {
+      display: block;
+      margin-bottom: 20px; }
+    .footer__primary-main {
+      display: block;
+      margin-bottom: 5px; }
+    .footer__primary-sub {
+      display: block;
+      margin-bottom: 100px; }
+  .footer__subscribe {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 35%;
+    transform: translate(-45%, -50%);
+    display: flex;
+    flex-direction: row; }
+    .footer__subscribe input {
+      border-radius: 100px;
+      height: 35px;
+      width: 350px;
+      padding-right: 0;
+      border: 0;
+      flex-grow: 2; }
+    .footer__subscribe-btn {
+      padding: 0;
+      border: 0;
+      border-radius: 50px;
+      height: 35px;
+      width: 150px;
+      background-color: #54d7b7;
+      cursor: pointer;
+      color: #dce0e8;
+      transform: translateX(-20%); }
+    .footer__subscribe-btn:hover {
+      background-color: #47ceac; }
+  .footer-nav > ul {
+    list-style-type: none; }
+  .footer-nav > ul li {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 200; }
+  .footer-nav > ul li:nth-child(1) {
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 25px; }
+  .footer-nav > ul li a {
+    text-decoration: none;
+    color: #000; }
+  .footer-nav_travel {
+    position: absolute;
+    top: 55%;
+    left: 15%; }
+  .footer-nav_company {
+    position: absolute;
+    top: 55%;
+    left: 30%; }
+  .footer-nav_resources {
+    position: absolute;
+    top: 55%;
+    left: 45%; }
+  .footer_follow > a {
+    margin-left: 15px;
+    color: #000; }
+  .footer_follow {
+    position: absolute;
+    top: 55%;
+    left: 60%; }
+    .footer_follow a:first-of-type {
+      margin-left: 30px; }
+    .footer_follow p {
+      font-size: 50px;
+      font-family: 'Lobster';
+      font-weight: normal;
+      margin-bottom: 20px; }
+    .footer_follow h5 {
+      margin-top: 50px;
+      display: inline-block; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(15px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: greenyellow;
+    padding-block-end: 20px;
+    text-align: center;
+}
+.column{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
