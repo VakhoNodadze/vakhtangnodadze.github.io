@@ -17,7 +17,7 @@ class Point {
     }
 
     isEqual(p) {
-        if(this.x === p.x && this.y === p.y){return true;}
+        if (this.x === p.x && this.y === p.y) { return true; }
     }
 }
 
@@ -47,13 +47,13 @@ class Board {
         let randomSnake = this.randomPoint();
         let parts = [];
         let partsCount = settings.partsCount;
-        for(let i = 0 ;  i < partsCount; i++){
+        for (let i = 0; i < partsCount; i++) {
             parts.push(randomSnake);
         }
-        this.snake =  new Snake(parts);
-        this.cellSize = canvas.width / this.columnsCount; 
+        this.snake = new Snake(parts);
+        this.cellSize = canvas.width / this.columnsCount;
         this.foodsCount = settings.foodsCount || 1;
-        this.winScore =  500;
+        this.winScore = 500;
         this.foodScore = settings.foodScore || 10;
         this.curScore = 0;
         canvas.height = this.rowsCount * this.cellSize;
@@ -73,7 +73,7 @@ class Board {
             if (this.orders.length) {
                 let order;
 
-                do order = this.orders.shift() 
+                do order = this.orders.shift()
                 while (this.orders.length && !this.goodOrder(order));
 
                 if (this.goodOrder(order)) {
@@ -84,7 +84,7 @@ class Board {
             let snakeHead = this.snake.parts[0];
             let snakeHeadNextPossition = snakeHead.sum(this.directionPoint());
 
-            this.snake.parts.unshift(snakeHeadNextPossition); 
+            this.snake.parts.unshift(snakeHeadNextPossition);
 
             let eaten = false;
             for (let i = 0; i < this.foods.length; i++) {
@@ -94,7 +94,7 @@ class Board {
 
                     this.curScore += this.foodScore;
 
-                    if(this.curScore > highScore) {
+                    if (this.curScore > highScore) {
                         highScore = this.curScore;
                         window.localStorage.setItem('highScore', highScore);
                     }
@@ -103,7 +103,7 @@ class Board {
                     //     let n = this.winScore / 50;
                     //     this.speed -= (this.startSpeed - this.maxSpeed) / n;
                     // }
-                    
+
                 }
             }
 
@@ -129,7 +129,7 @@ class Board {
             window.requestAnimationFrame(this.requestAnimationFrameCallBack.bind(this));
         }
     }
-    
+
     pause() {
         this.paused = true;
     }
@@ -142,7 +142,7 @@ class Board {
     randomPoint(forFood = false) {
         if (!forFood) {
             return new Point(rand(0, this.columnsCount), rand(0, this.rowsCount));
-        }else{
+        } else {
             let randomPlace;
             do randomPlace = this.randomPoint();
             while (this.snake.parts.some(p => p.isEqual(randomPlace)) || this.foods.some(f => f.isEqual(randomPlace)));
@@ -154,15 +154,15 @@ class Board {
     draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        for(let i = 0; i < this.snake.parts.length; i++){
-            if(i == 0){
+        for (let i = 0; i < this.snake.parts.length; i++) {
+            if (i == 0) {
                 ctx.fillStyle = 'blue';
-                ctx.fillRect(this.snake.parts[i].x * this.cellSize,this.snake.parts[i].y * this.cellSize, this.cellSize, this.cellSize);
-            }else{
+                ctx.fillRect(this.snake.parts[i].x * this.cellSize, this.snake.parts[i].y * this.cellSize, this.cellSize, this.cellSize);
+            } else {
                 ctx.fillStyle = 'black';
-                ctx.fillRect(this.snake.parts[i].x * this.cellSize,this.snake.parts[i].y * this.cellSize, this.cellSize, this.cellSize);
+                ctx.fillRect(this.snake.parts[i].x * this.cellSize, this.snake.parts[i].y * this.cellSize, this.cellSize, this.cellSize);
             }
-            
+
         }
 
         for (let food of this.foods) {
@@ -196,8 +196,8 @@ class Board {
         ctx.fillText('Win', canvas.width / 2, canvas.height / 2);
         this.pause();
     }
-    
-    drawPause(){
+
+    drawPause() {
         ctx.font = "30px Comic Sans MS";
         ctx.fillStyle = "red";
         ctx.textAlign = "center";
@@ -248,26 +248,26 @@ class Board {
 let board = new Board();
 let highScore = window.localStorage.getItem('highScore') || 0;
 
-document.querySelector('.apply-button').addEventListener('click', function () {
+document.querySelector('.start-button').addEventListener('click', function () {
     let settings = {};
     let level = document.querySelector('#selectBox').value;
 
     switch (level) {
-        case 'Easy': settings.speed = 150;  break;
-        case 'Medium': settings.speed = 100;  break;
-        case 'Hard': settings.speed = 60;  break;
+        case 'Easy': settings.speed = 150; break;
+        case 'Medium': settings.speed = 100; break;
+        case 'Hard': settings.speed = 60; break;
     }
 
     let foodsCount = document.querySelector('#FoodCount').value;
     if (!isNaN(foodsCount)) {
-            settings.foodsCount = foodsCount;
-        }
+        settings.foodsCount = foodsCount;
+    }
 
     let snakeSpeed = document.querySelector('#SnakeSpeed').value;
-    if(!isNaN(snakeSpeed)){
+    if (!isNaN(snakeSpeed)) {
         settings.speed = snakeSpeed;
     }
-    
+
 
     settings.columnsCount = document.querySelector('#Columns').value;
     settings.rowsCount = document.querySelector('#Rows').value;
@@ -284,7 +284,7 @@ window.addEventListener('keydown', function (e) {
     }
 
     switch (e.key) {
-        case 'w': case 'ArrowUp': board.orders.push('Up');  break;
+        case 'w': case 'ArrowUp': board.orders.push('Up'); break;
         case 's': case 'ArrowDown': board.orders.push('Down'); break;
         case 'a': case 'ArrowLeft': board.orders.push('Left'); break;
         case 'd': case 'ArrowRight': board.orders.push('Right'); break;
@@ -294,17 +294,17 @@ window.addEventListener('keydown', function (e) {
 });
 
 document.querySelector('.start-button').addEventListener('click', function () {
-    if(!board.curScore) {
+    if (!board.curScore) {
         board.gameOver = false;
         board.unpause();
     }
 });
 
-document.querySelector('.pause-button').addEventListener('click', function (){
+document.querySelector('.pause-button').addEventListener('click', function () {
     board.drawPause();
 });
 
-document.querySelector('.resume-button').addEventListener('click', function (){
+document.querySelector('.resume-button').addEventListener('click', function () {
     board.unpause();
 });
 
