@@ -1,0 +1,265 @@
+<html>
+
+<head>
+	<title>car site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/icon" href="assets/img/favico.ico">
+	<link rel="stylesheet" href="assets/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<!-- header start -->
+
+	<header>
+		<button class="burger-bar"></button>
+		<nav class="menu">
+			<div class="logo-red logo">
+				<img src="assets/img/logo-red.svg" alt="logo">
+			</div>
+			<ul>
+				<li>
+					<a href="#slider">
+						home
+					</a>
+				</li>
+				<li>
+					<a href="#services">
+						services
+					</a>
+				</li>
+				<li>
+					<a href="#contact">
+						contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- header end -->
+
+	<!-- slider start -->
+
+	<section id="slider">
+		<div class="logo">
+			<img src="assets/img/logo.svg" alt="logo">
+		</div>
+		<div class="slider-info right-align">
+			<p class="date">27.01.2018</p>
+			<p class="title">Vintage Auto Exhibition</p>
+		</div>
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<div class="carousel-image" style="background-image: url(assets/img/car.png);"></div>
+			</div>
+			<div class="item">
+				<div class="carousel-image" style="background-image: url(assets/img/car.png);"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- slider end -->
+
+	<!-- services start -->
+
+	<section id="services">
+		<div class="services-title center-align">
+			the corner garage for collector cars
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col m4 s12">
+					<div class="service">
+						<div class="service-image">
+							<img src="assets/img/modify.svg">
+						</div>
+						<p>modify</p>
+					</div>
+				</div>
+				<div class="col m4 s12">
+					<div class="service">
+						<div class="service-image">
+							<img src="assets/img/car1.svg">
+						</div>
+						<p>buy</p>
+					</div>
+				</div>
+				<div class="col m4 s12">
+					<div class="service">
+						<div class="service-image">
+							<img src="assets/img/repair.svg">
+						</div>
+						<p>repair</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="car-animation">
+			<div class="road"></div>
+			<div class="car"></div>
+		</div>
+	</section>
+
+	<!-- services end -->
+
+	<!-- contact start -->
+
+	<section id="contact">
+		<div class="row">
+			<div class="col l10 offset-l1 m12 s12">
+				<div id="googleMap"></div>
+			</div>
+			<div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 contact-front">
+				<div class="row">
+					<div class="col xl4 contact-info">
+						<h1>contact information</h1>
+						<p>click to view</p>
+						<div class="socials center-align">
+							<a href="" class="social-icon left">
+								<img src="assets/img/google-plus.svg">
+							</a>
+							<a href="" class="social-icon left">
+								<img src="assets/img/facebook.svg">
+							</a>
+							<a href="" class="social-icon left">
+								<img src="assets/img/twitter.svg">
+							</a>
+						</div>
+					</div>
+					<div class="col xl8 l12 m12 s12 contact-form">
+						<form name="contactForm" action="#" onsubmit="return form.validate()" method="post" id="contactForm">
+							<h1 class="form-title">
+								get in touch
+							</h1>
+							<div class="row">
+								<div class="col m6 s12">
+									<div class="input-field">
+										<label for="name">name</label>
+										<input type="text" name="name" id="name" data-error="*">
+									</div>
+									<div class="input-field">
+										<label for="email">email</label>
+										<input type="email" name="email" id="email" data-error="*">
+									</div>
+									<div class="input-field">
+										<label for="subject">subject</label>
+										<input type="text" name="subject" id="subject" data-error="*">
+									</div>
+									<div class="input-field">
+										<label for="message">message</label>
+										<textarea id="message" data-error="*"></textarea>
+									</div>
+								</div>
+								<div class="col m6 s12">
+									<div class="input-field margin-0">
+										<div class="radio-button">
+											<label>
+												<input name="group1" type="radio" class="radio-btn" data-error="*" />
+												<span>male</span>
+											</label>
+										</div>
+										<div class="radio-button">
+											<label>
+												<input name="group1" type="radio" class="radio-btn" />
+												<span>female</span>
+											</label>
+										</div>
+									</div>
+									<div class="form-title-2">
+										Sign up for newsletter
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span>receive images</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span>receive promotions</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span>receive updates</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span>receive job offers</span>
+										</label>
+									</div>
+									<button class="send-button right">send</button>
+								</div>
+							</div>
+							<p class="form-success">Your message has been sent!</p>
+						</form>
+					</div>
+					<div class="row click-to-view">
+						<div class="col s6 click-view">
+							click to view
+						</div>
+						<div class="socials bottom-align right-align col s6">
+							<a href="" class="social-icon right">
+								<img src="assets/img/twitter.svg">
+							</a>
+							<a href="" class="social-icon right">
+								<img src="assets/img/facebook.svg">
+							</a>
+							<a href="" class="social-icon right">
+								<img src="assets/img/google-plus.svg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact end -->
+
+	<!-- footer start -->
+
+	<footer>
+		<div class="row">
+			<div class="col l8 offset-l2 m12 s12">
+				<div class="row">
+					<div class="col s6 copyright">
+						© copyright 2019
+					</div>
+					<div class="col s6 right-align creators">
+						created by: Vakhtang Nodadze
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- footer end -->
+
+	<script type="text/javascript">
+		let map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('googleMap'), {
+				center: { lat: 41.7151, lng: 44.8271 },
+				zoom: 4
+			});
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt-iZml1ZgUJsymgQTdjuA8nPcu2vjoGA&callback=initMap"
+	 async defer></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/materialize.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>
