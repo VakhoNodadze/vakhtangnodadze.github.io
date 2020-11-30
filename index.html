@@ -17,399 +17,81 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <style>
+
+body {
+  background-color: #95c2de;
+}
+
+.mainbox {
+  background-color: #95c2de;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+  .err {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 20%;
+    top: 8%;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+}
+
+ .err2 {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 8%;
+  }
+
+.msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+    </style>
   </head>
   <body>
-    <!-- ================ HEADER============== -->
-    <header>
-      <div class="wrapper">
-        <div class="logo">
-            <h1>Vakhtang Nodadze</h1>
-        </div>
+    <!-- purple x moss 2020 -->
 
-        <nav>
-          <ul class="nav">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#resume">RESUME</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-          </ul>
-        </nav>
-
-        <div class="social">
-          <ul>
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/vakhtang-nodadze-2b3521144/"
-              target="_blank"
-                ><i class="fa  fa-linkedin "></i
-              ></a>
-            </li>
-            <li class="github">
-              <a href="https://github.com/VakhoNodadze"
-              target="_blank"
-                ><i class="fa fa-github"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="mainbox">
+    <div class="err">4</div>
+    <i class="far fa-question-circle fa-spin"></i>
+    <div class="err2">4</div>
+    <div class="msg">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first place?
+      <p>Let's go to <a href="http://vakhonodadze.github.io/Portfolio">Vakhtang's Portfolio Page </a>if you want to view his awesome work</p></div>
       </div>
-    </header>
-    <!-- ====== HEADER ENDS HERE ========== -->
-
-    <!-- ====== MAIN STARTS HERE ======= -->
-
-    <main id="home">
-      <div class="slider wrapper">
-        <h1>Hello, I am</h1>
-        <span class="type-it"></span>
-      </div>
-    </main>
-    <!-- ====== MAIN ENDS HERE ========== -->
-
-    <!-- ====== ABOUT STARTS HERE ========== -->
-    <section id="about">
-      <div class="sectionTitle">
-        <h1>About Me</h1>
-      </div>
-
-      <div class="wrapper clearfix">
-        <div class="col-md-6 portrait">
-          <img src="port.jpg" alt="Raquel Ratcliffe portrait" />
-        </div>
-        <div class="col-md-6 aboutText">
-          <p>
-            I am responsible, determined and a great teamplayer with a good
-            understanding of front-end development
-          </p>
-          <p>
-            I think the most important thing in anyone's career is the passion
-            for his profession and I love what I do. It gives me joy. I am very
-            motivated to pursue a career in this field.
-          </p>
-          <p>
-            I am very fond of learning new technologies. I am very quick to
-            adept to any environment. I can honeslty say, I don't know
-            everything but I am able to learn anything.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============= ABOUT ENDS==================== -->
-
-    <!-- ================ RESUME ==================== -->
-    <section id="resume">
-      <div class="sectionTitle">
-        <h1>Education &amp; Work Experience</h1>
-      </div>
-
-      <div class="wrapper">
-        <div class="col-md-6">
-          <ul class="work">
-            <li>
-              <span class="date"
-                ><i class="fa fa-graduation-cap fa-lg"></i><br />2014-2019</span
-              >
-              <h4>Tbilisi State University</h4>
-              <p>Programming Faculty</p>
-            </li>
-            <li>
-              <span class="date"
-                ><i class="fa fa-graduation-cap fa-lg"></i><br />2018-2019</span
-              >
-              <h4>Israeli Techub</h4>
-              <p>FrontEnd Development Course</p>
-            </li>
-            <li>
-              <span class="date"
-                ><i class="fa fa-graduation-cap fa-lg"></i><br />2002-2014</span
-              >
-              <h4>24th Public School</h4>
-              <p>Top in class</p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul class="work">
-            <li>
-              <span class="date"
-                ><i class="fa fa-briefcase fa-lg"></i><br />
-                &nbsp;<span>2019-2020</span>&nbsp;</span
-              >
-              <h4>Intrro</h4>
-              <p>Front End Developer</p>
-            </li>
-            <li>
-              <span class="date"
-                ><i class="fa fa-briefcase fa-lg"></i><br />
-                &nbsp;<span>2019</span>&nbsp;</span
-              >
-              <h4>RightNao</h4>
-              <p>Golang Developer</p>
-            </li>
-            <li>
-              <span class="date"
-                ><i class="fa fa-briefcase fa-lg"></i><br />
-                &nbsp;<span>2019</span>&nbsp;</span
-              >
-              <h4>Respo</h4>
-              <p>React Developer</p>
-            </li>
-
-            <li>
-              <span class="date"
-                ><i class="fa fa-briefcase fa-lg"></i
-                ><br />&nbsp;<span>2017-2019</span> &nbsp;</span
-              <h4>TeknFix</h4>
-              <p>Web Developer</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- =============== RESUME ENDS =============== -->
-
-    <!-- ================ PORTFOLIO ================ -->
-    <section id="portfolio">
-      <div class="sectionTitle">
-        <h1>Portfolio</h1>
-      </div>
-
-      <div class="wrapper clearfix">
-
-        <div class="portfolioItem">
-          <img
-            src="./ddddd.png"
-            alt="Students Statistics"
-          />
-          <div class="portfolioText">
-            <h3>DesignersMX</h3>
-            <p>
-              <a
-                href="./DesignersMX-master/index.html"
-                target="_blank"
-                title="DesignersMX"
-                >Website</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="portfolioItem">
-          <img src="./Boooks.PNG" alt="Books API" />
-          <div class="portfolioText">
-            <h3>Books API Redux</h3>
-            <p>
-              <a
-                href="https://vakhonodadze.github.io/Book-API/"
-                target="_blank"
-                title="https://vakhonodadze.github.io/Book-API/"
-                >Website</a
-              >
-            </p>
-            <p>
-                <a
-                  href="https://github.com/VakhoNodadze/Book-API"
-                  target="_blank"
-                  title="https://github.com/VakhoNodadze/Book-API"
-                  >Code</a
-                  >
-            </p>
-          </div>
-          <!--   <div><h3>Test Div</h3></div> -->
-        </div>
-        <div class="portfolioItem">
-          <img
-            src="./movies.PNG"
-            alt="Movies App"
-          />
-          <div class="portfolioText">
-            <h3>Movies App React</h3>
-            <p>
-              <a
-                href="https://vakhonodadze.github.io/MoviesApp/#/movies"
-                target="_blank"
-                title="https://vakhonodadze.github.io/MoviesApp/#/movies"
-                >Website</a
-              >
-            </p>
-            <p>
-                <a
-                  href="https://github.com/VakhoNodadze/MoviesApp"
-                  target="_blank"
-                  title="https://github.com/VakhoNodadze/MoviesApp"
-                  >Code</a
-            </p>
-          </div>
-          <!--   	<div><h3>Test Div2</h3></div> -->
-        </div>
-
-        <div class="portfolioItem">
-          <img
-            src="./landing.PNG"
-            alt="Landing Page"
-          />
-          <div class="portfolioText">
-            <h3>Landing Page React</h3>
-            <p>
-              <a
-                href="https://vakhonodadze.github.io/Portfolio/"
-                target="_blank"
-                title="https://vakhonodadze.github.io/Portfolio/"
-                >Website</a
-              >
-            </p>
-            <p>
-                <a
-                  href="https://github.com/VakhoNodadze/Portfolio"
-                  target="_blank"
-                  title="https://github.com/VakhoNodadze/Portfolio"
-                  >Code</a
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolioItem">
-          <img
-            src="./snake.PNG"
-            alt="Snake"
-          />
-          <div class="portfolioText">
-            <h3>Snake Game Javascript</h3>
-            <p>
-              <a
-                href="https://vakhonodadze.github.io/Project_N2_Snake/index.html"
-                target="_blank"
-                title="https://vakhonodadze.github.io/Project_N2_Snake/index.html"
-                >Website</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolioItem">
-          <img
-            src="./car.PNG"
-            alt="car"
-          />
-          <div class="portfolioText">
-            <h3>Car Website Javascript</h3>
-            <p>
-              <a
-                href="https://vakhonodadze.github.io/myCar-Website/index.html"
-                target="_blank"
-                title="https://vakhonodadze.github.io/myCar-Website/index.html"
-                >Website</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolioItem">
-          <img
-            src="./students.PNG"
-            alt="Students Statistics"
-          />
-          <div class="portfolioText">
-            <h3>Students Javascript</h3>
-            <p>
-              <a
-                href="https://vakhonodadze.github.io/Project/index.html"
-                target="_blank"
-                title="https://vakhonodadze.github.io/Project/index.html"
-                >Website</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolioItem">
-          <img src="./natours.png" alt="Natours | Exciting Tours">
-          <div class="portfolioText">
-            <h3>Natours | Exciting Tours</h3>
-            <p>
-              <a
-                href="./Natours/index.html"
-                target="_blank"
-                >Website</a
-              >
-            </p>
-          </div>
-        </div>
-
-        
-        </div>
-      </div>
-    </section>
-
-    <!-- ============== PORTFOLIO ENDS ============== -->
-
-    <!-- ================= FOOTER =================== -->
-
-    <footer id="footer">
-      <div class="socialFooter">
-        <ul class="social-icons-rounded ">
-          <li class="linkedin">
-            <a href="https://www.linkedin.com/in/vakhtang-nodadze-2b3521144/"
-            target="_blank"
-              ><i class="fa  fa-linkedin "></i
-            ></a>
-          </li>
-          <li class="github">
-            <a href="https://github.com/VakhoNodadze"
-            target="_blank"
-              ><i class="fa fa-github"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="copy">
-        <p>
-          &copy; 2016 | Created with
-          <span class="pink"><i class="fa fa-heart-o"></i></span> by Raquel
-          Ratcliffe
-        </p>
-      </div>
-    </footer>
-    <!-- ====== FOOTER ENDS HERE ========== -->
-
-    <!-- ====== SCRIPTS HERE ========== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"
-    ></script>
-
-    <!-- Add type-it calling function used on main section over image-->
-    <script type="text/javascript">
-      $(".type-it").typeIt({
-        strings: [
-          "<h1> &nbsp;Vakhtang... </h1>",
-          "<h1> &nbsp;a React Developer...</h1>",
-          "<h1> &nbsp;a Web Developer... </h1>",
-          "<h1> &nbsp;an animal lover... </h1>"
-        ],
-        speed: 100,
-        breakLines: false,
-        lifeLike: true,
-        cursor: false,
-        startDelay: 200,
-        loop: true,
-        html: true,
-        autoStart: true
-      });
-    </script>
-
-    <script src="
-https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
-    <script>
-      $(function() {
-        $("a").smoothScroll({
-          offset: -50
-        });
-      });
-    </script>
-
     <script src="https://use.fontawesome.com/5e356d7f24.js"></script>
   </body>
 </html>
